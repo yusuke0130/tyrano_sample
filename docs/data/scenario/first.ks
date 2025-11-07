@@ -1,46 +1,54 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="スパイスを知ろう"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
+[bg storage=title.jpg time=200]
+「スパイスを知ろう」[l][r]
 
-「走るか寝るかするメロス」[l][r]
+スパイスには多くの種類があり、聞いたこともないものも多いだろう。[l][r]
 
-メロスは激怒した。[l][r]
-
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
-
-(中略)[l][r]
-
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
-
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+正しいスパイスの組み合わせを選んで美味しいスパイスカレーに必要なスパイスを答えよう!![l][r]
+正しい組み合わせはどれ？[l][r]
+A:コショウ、オレガノ、コリアンダー、フェヌグリーク[r]
+B:シナモン、クミン、八角、カルダモン[r]
+C:ローズマリー、ナツメグ、クローブ、クミン[r]
+[link target=*tag_A] →A [endlink][r]
+[link target=*tag_B] →B [endlink][r]
+[link target=*tag_C] →C [endlink][r]
 [s]
 
-*tag_sleep
+*tag_A
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+[bg storage=selectBC.png time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+失敗[l][r]
+コショウとオレガノがカレーに合わないね。。。[r]
 
-【 BAD END 】[l][cm]
+[l][cm]
 
 [jump target=*start]
 
-*tag_run
-
-[bg storage=run.jpg time=500]
+*tag_B
+[cm]
+[bg storage=selectA.jpg time=500]
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
+正解!!お見事[l][r]
+八角は中華料理のイメージがあるけど、スパイスカレーに深みを出すんです。[r]
+これで香り豊かなカレーが作れるね!![r]
 
-【 GOOD END 】[l][cm]
+[l][cm]
 
+[jump target=*start]
+*tag_C
+ [cm]
+
+[bg storage=selectBC.png time=500]
+失敗[l][r]
+ローズマリーは肉や魚に香りづけをするためのものです。カレーには使わないかな[r]
+[l][cm]
 [jump target=*start]
